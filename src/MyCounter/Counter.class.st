@@ -29,3 +29,9 @@ Counter >> decrement [
 Counter >> increment [
 	count := count + 1.
 ]
+
+{ #category : #initialization }
+Counter >> initialize [
+	"Sets initial count to 0"
+	count := 0.
+]

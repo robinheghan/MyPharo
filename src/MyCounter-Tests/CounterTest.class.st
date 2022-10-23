@@ -22,6 +22,15 @@ self assert: c count equals: 2.
 ]
 
 { #category : #tests }
+CounterTest >> testCounterInitialValueIs0 [
+| c |
+c := Counter new.
+self assert: c count equals: 0.
+
+
+]
+
+{ #category : #tests }
 CounterTest >> testCounterIsSetAndRead [
 | c |
 c := Counter new.
