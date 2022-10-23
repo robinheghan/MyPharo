@@ -19,3 +19,19 @@ Counter >> count [
 Counter >> count: value [
 	count := value.
 ]
+
+{ #category : #counting }
+Counter >> decrement [
+	| c |
+	c := self count.
+	c := c - 1.
+	self count: c.
+]
+
+{ #category : #counting }
+Counter >> increment [
+	| value |
+	value := self count.
+	value := value + 1.
+	self count: value.
+]
