@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #tests }
+CounterTest >> testCanInitializeAtSpecificValue [
+	self assert: (Counter startAt: 5) count equals: 5
+]
+
+{ #category : #tests }
 CounterTest >> testCounterDecrement [
 | c |
 c := Counter new.
